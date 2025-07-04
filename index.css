@@ -1,0 +1,259 @@
+.wdxl-lubrifont-tc-regular {
+  font-family: "WDXL Lubrifont TC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+*{
+    margin: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+:root{
+    --primary-color: black;
+    --text-color:aliceblue;
+}
+body{
+    background-color: var(--primary-color);
+}
+/* home css  */
+.home{
+    height: 100vh;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.573),purple,);
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+
+}
+.home>.content{
+    /* background-color: aliceblue; */
+    height: 65%;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.home>.explore-btn{
+    height: 20%;
+    width: 90%;
+    /* background-color: aqua; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.home>.content>img{
+  height: 100%;
+  border-radius: 10%;
+  
+}
+.home>.content>.text{
+    color: var(--text-color);
+   
+}
+
+.home>.explore-btn>a{
+    background-color: var(--text-color);
+    color: var(--primary-color);
+    height: 50px;
+    width: 20%;
+    /* color: black; */
+    text-decoration: none;
+   
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    
+   
+
+}
+.primary-heading{
+    font-size: 5rem;
+    color: aliceblue;
+     font-family: "WDXL Lubrifont TC", sans-serif;
+     font-weight: 400;
+     font-style: normal;
+    
+}
+.secondary-para{
+    font-size: 2.5rem;
+    color: aliceblue;
+     font-family: "WDXL Lubrifont TC", sans-serif;
+     font-weight: 400;
+     font-style: normal;
+    
+}
+.explore-btn>a:hover{
+     transform: scale(1.03);
+     box-shadow: 0px 0px 5px 5px white;
+    
+}
+
+/* wrapper */
+.wrapper{
+    height: 400vh;
+    width: 100%;
+    /* background-color:red; */
+     display: flex;
+     flex-direction: column;
+    align-items: flex-end;
+    /* justify-content: space-evenly;  */
+     
+}
+.wrapper>header{
+    height: 50px;
+    width: 50%;
+    /* background-color: gray; */
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: sticky;
+    top: 0;
+}
+header>a{
+    color: yellowgreen;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+header>a:hover{
+    color: lime;
+}
+
+.wrapper>.container{
+    /* height: 100vh; */
+    min-height: 100vh;
+    width: 100%;
+}
+.wrapper>.About{
+   background-color: purple;
+}
+.wrapper>.Service{
+    background-color: pink;
+}
+.wrapper>.Work{
+    background-color: red;
+}
+.wrapper>.Contact{
+    background-color:purple;
+}
+/* mobile device */
+@media  screen and (max-width:767px){
+    .home{
+        height: 100vh;
+        flex-direction: column;
+    }
+    .home>.content{
+        flex-direction: column-reverse;
+        justify-content: center;
+        text-align: center;
+        font-size: 10px;
+    }
+    .home>.content.text{
+        font-size: 10px;
+
+    }
+    .home>.content>img{
+        height: 300px;
+        width: 80%;
+    }
+    .wrapper>header{
+        width: 100%;
+    }
+    
+}
+.About{
+     border-radius: 50%;
+}
+.anim{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+   
+    /* gap: 20px; */
+   
+}
+.anim>img{
+    height: 300px;
+    padding-top: 200px;
+    padding-left:100px;
+    /* border-radius: 30%; */
+    
+  
+   
+}
+.anim>p{
+    font-size: 1.3rem;
+    padding-top: 200px;
+    padding-left: 100px;
+   font-family: "WDXL Lubrifont TC", sans-serif;
+   text-align: center;
+   
+}
+.anim>a{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    background-color: black;
+    text-decoration: none;
+    position: relative;
+    left: -500px;
+    top: 300px;
+    
+     display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 1.1rem;
+    border: 1px white solid;
+}
+.anim>a:hover{
+     transform: scale(1.03);
+     box-shadow: 0px 0px 5px 5px black;
+    
+}
+.Service{
+    display: flex;
+    justify-content: center;
+    
+    
+    color: black;
+
+    padding-top: 250px;
+    border-radius: 50%;
+  
+    gap: 40px;
+   
+}
+.wrapper>.Service>.main{
+    height: 400px;
+    width: 15%;
+    background-color:white;
+    display: grid;
+    justify-content: center;
+    /* align-items: center; */
+    font-size: 1.4rem;
+     border-radius: 5%;
+     border: 2px red solid;
+     
+}
+.wrapper>.Service>.main>.second{
+    font-size: 1rem;
+    color: black;
+}
+.wrapper>.Service>.main:hover{
+     transform: scale(1.03);
+     box-shadow: 8px 8px 12px  black;
+}
+.wrapper>.Service>.main>.second>img{
+    height: 25px;
+    /* background-color: ; */
+   position: relative;
+   top: 5px;
+}
+
+
